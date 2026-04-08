@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini CRM</title>
+</head>
+<body>
+
+<h1>Customer Management System</h1>
+
+<form onsubmit="addCustomer(); return false;">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="submit">Add</button>
+</form>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="list"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
